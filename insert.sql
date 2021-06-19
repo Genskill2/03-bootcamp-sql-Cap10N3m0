@@ -1,19 +1,19 @@
 INSERT INTO publisher (name, country) VALUES('PHI','India');
 INSERT INTO publisher (name, country) VALUES('Harper', 'USA');
 INSERT INTO publisher (name, country) VALUES('GCP','USA');
-INSERT INTO publisher (name, country) VALUES('Avery''USA');
+INSERT INTO publisher (name, country) VALUES('Avery','USA');
 INSERT INTO publisher (name, country) VALUES('Del Rey','UK');
 INSERT INTO publisher (name, country) VALUES('Vintage','UK');
 
-INSERT INTO subjects VALUES('C');
-INSERT INTO subjects VALUES('UNIX');
-INSERT INTO subjects VALUES('Technology');
-INSERT INTO subjects VALUES('Go');
-INSERT INTO subjects VALUES('Science Fiction');
-INSERT INTO subjects VALUES('Productivity');
-INSERT INTO subjects VALUES('Psychology');
-INSERT INTO subjects VALUES('Politics');
-INSERT INTO subjects VALUES('History');
+INSERT INTO subjects(name) VALUES('C');
+INSERT INTO subjects(name) VALUES('UNIX');
+INSERT INTO subjects(name) VALUES('Technology');
+INSERT INTO subjects(name) VALUES('Go');
+INSERT INTO subjects(name) VALUES('Science Fiction');
+INSERT INTO subjects(name) VALUES('Productivity');
+INSERT INTO subjects(name) VALUES('Psychology');
+INSERT INTO subjects(name) VALUES('Politics');
+INSERT INTO subjects(name) VALUES('History');
 
 INSERT INTO books(title,publisher) VALUES('The C Programming Language',1);
 INSERT INTO books(title,publisher) VALUES('The Go Programming Language',1);

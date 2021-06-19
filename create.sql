@@ -1,21 +1,21 @@
 CREATE TABLE publisher(
-    id serial PRIMARY KEY,
+    id integer PRIMARY KEY,
     name TEXT,
     country TEXT
 );
 
 CREATE TABLE books(
-    id serial PRIMARY KEY,
+    id integer PRIMARY KEY,
     title TEXT,
-    publisher serial REFERENCES publisher(id)
+    publisher integer REFERENCES publisher(id)
 );
 
 CREATE TABLE subjects(
-    id serial PRIMARY KEY,
+    id integer PRIMARY KEY,
     name TEXT
 );
 
 CREATE TABLE books_subjects(
-    book serial REFERENCES books(id),
-    subject serial REFERENCES subjects(id)
+    book integer REFERENCES books(id),
+    subject integer REFERENCES subjects(id)
 );
